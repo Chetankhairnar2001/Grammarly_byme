@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammarly Special Edition</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to Grammarly</h2>
+        <p>Check your English text for Grammar, Spellings and Punctuations.
+            With Grammarly created by Chetan Khairnar.</p>
+        <textarea data-grammarly class="textarea" id="textarea"
+        maxlength="150" placeholder="Please enter text here"
+        ></textarea>
+        <button>Copy Text</button>
+        <div class="counter-container">
+            <p>Total Character: <span id="total-char"> 0 </span></p>
+            <p>Remaining Character: <span id="remain-char"> 150</span></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=YOUR_CLIENT_ID"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
